@@ -1,0 +1,93 @@
+#include<stdio.h>
+
+int main() {
+    int m;
+    int count=0;
+    char ch[5];
+    int index = -1;
+    int number;
+    printf("enter size of array\n");
+    scanf("%d",&m);
+    int arr[m];
+    printf("Operations\n 1. Push element in stack\n 2. Pop element from stack\n 3. Print stack\n 4. Exit");
+    printf("Enter operation number followed by the element for array\n");
+    scanf("%s", &ch)
+    int option = ch[0];
+    int element;
+    int a,b,c,d;
+    if(ch[1]!=null)
+    {
+        a = ch[1];
+    }
+    if(ch[2]!=null)
+    {
+        b = ch[2];
+    }
+    if(ch[3]!=null)
+    {
+        c = ch[3];
+    }
+    if(ch[4]!=null)
+    {
+        d = ch[4];
+    }
+    
+    if(a!=null && b!=null && c!=null && d!=null)
+    {
+        number = a*1000 + b*100 + c*10 + d;
+    }
+    else if(a!=null && b!=null && c!=null && d==null)
+    {
+        number = a*100 + b*10 + c;
+    }
+    else if(a!=null && b!=null && c==null && d==null)
+    {
+        number = a*10 + b;
+    }
+    else if(a!=null && b==null && c==null && d==null)
+    {
+        number = a;
+    }
+    else
+    {
+        printf("no element entered for stack");
+    }
+    switch(option)
+    {
+        case 1:
+            arr[count] = number;
+            count = count + 1;
+            break;
+        
+        case 2:
+            for(int h = 0;h<m;h++)
+            {
+                if(arr[h]==number)
+                {
+                    index = h;
+                    break;
+                }
+            }
+            if(index != -1)
+            {
+                for(i = index; i < m - 1; i++)
+                    arr[i] = arr[i+1];
+            }
+            break;
+            
+        case 3:
+            for(int h = 0;h<m-1;h++)
+            {
+                printf("%d",arr[h]);
+            }
+            break;
+            
+        case 4:
+            printf("Exiting program...");
+            break;
+            
+        default:
+            prinf("Error! Incorrect option");
+    
+    
+}
