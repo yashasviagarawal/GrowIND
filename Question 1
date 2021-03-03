@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int void main()
+{
+  int a = 5;
+  int b = 8;
+  int i;
+  for(i=0;i<=b;i++){
+    a++;
+  }
+  printf("sum of a and b is:- %d",a);
+  return 0;
+}
